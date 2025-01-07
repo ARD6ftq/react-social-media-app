@@ -45,7 +45,7 @@ const SignUp = () => {
           </select>
           <p className="text-gray-900 mt-4">
             Already have an account?{' '}
-            <Link className="text-sm text-blue-500 hover:underline" href="/SignIn">
+            <Link className="text-sm text-blue-500 hover:underline" href="/">
               Login
             </Link>
           </p>
