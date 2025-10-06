@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import '../app/globals.css';
 
 const SignUp = () => {
   return (
@@ -10,42 +11,33 @@ const SignUp = () => {
           <input
             placeholder='First Name'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            type='text'
+            type='text' required
           />
           <input
             placeholder='Last Name'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            type='text'
+            type='text' required
           />
           <input
             placeholder='Username'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            type='text'
+            type='text' required
           />
           <input
             placeholder='Email'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            type='email'
+            type='email' required
           />
           <input
             placeholder='Password'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            type='password'
+            type='password' required
           />
-          <label
-            className='text-sm mb-2 text-gray-900 cursor-pointer'
-            htmlFor='gender'
-          >
-            Gender
-          </label>
-          <select
+          <input
+            placeholder='Confirm password'
             className='bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150'
-            id='gender'
-          >
-            <option value='male'>Male</option>
-            <option value='female'>Female</option>
-            <option value='other'>Other</option>
-          </select>
+            type='password' required
+          />
           <p className='text-gray-900 mt-4'>
             Already have an account?{' '}
             <Link className='text-sm text-blue-500 hover:underline' href='/'>
